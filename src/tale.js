@@ -5,30 +5,30 @@ const wolf = 'волк';
 const bear = 'медведь';
 const fox = 'лиса';
 
-kolobok(grandfather);
-kolobok(grandmother);
-kolobok(hare);
-kolobok(wolf);
-kolobok(bear);
-kolobok(fox);
-kolobok('единорог');
+console.log(kolobok(grandfather));
+console.log(kolobok(grandmother));
+console.log(kolobok(hare));
+console.log(kolobok(wolf));
+console.log(kolobok(bear));
+console.log(kolobok(fox));
+console.log(kolobok('единорог'));
 
 function kolobok(nameCharacter) {
     switch (nameCharacter) {
         case 'дедушка':
-            return console.log('Я от дедушки ушел');
+            return 'Я от дедушки ушел';
         case 'бабушка':
-            return console.log('Я от бабушки ушел');
+            return 'Я от бабушки ушел';
         case 'заяц':
-            return console.log('Я от зайца ушел');
+            return 'Я от зайца ушел';
         case 'волк':
-            return console.log('Я от волка ушел');
+            return 'Я от волка ушел';
         case 'медведь':
-            return console.log('Я от медведя ушел');
+            return 'Я от медведя ушел';
         case 'лиса':
-            return console.log('Меня съели');
+            return 'Меня съели';
         default:
-            return console.log('Не известное животное... Сбежал от него');
+            return 'Не известное животное... Сбежал от него';
     }
 }
 
